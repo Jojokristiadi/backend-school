@@ -1,4 +1,4 @@
-package com.school.smp1;
+package com.school.smp1.models;
 
 public class Greeting {
 	private final long id;
