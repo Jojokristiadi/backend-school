@@ -20,24 +20,24 @@ Contoh json:
         "couriers": [
             {
                 "name": "Sicepat",
-                "service": [
+                "service": {
                     "type": "sameday",
                     "cost": 10000
-                ]
+                }
             },
             {
                 "name": "Sicepat",
-                "service": [
+                "service": {
                     "type": "reg",
                     "cost": 5000
-                ]
+                }
             },
             {
                 "name": "JNE",
-                "service": [
+                "service": {
                     "type": "reg",
                     "cost": 9000
-                ]
+                }
             }
         ]
     },
@@ -48,24 +48,24 @@ Contoh json:
         "couriers": [
             {
                 "name": "AnterAja",
-                "service": [
+                "service": {
                     "type": "sameday",
                     "cost": 10000
-                ]
+                }
             },
             {
                 "name": "AnterAja",
-                "service": [
+                "service": {
                     "type": "reg",
                     "cost": 5000
-                ]
+                }
             },
             {
                 "name": "JNE",
-                "service": [
+                "service": {
                     "type": "reg",
                     "cost": 9000
-                ]
+                }
             }
         ]
     }
@@ -119,10 +119,14 @@ Contoh json:
     * H2 Database
 - Ada 4 bagian besar dari backend: 
     * Models
-        Membuat object class berdasarkan table yang ada. Tapi tidak harus selalu dari table.
+    
+    Membuat object class berdasarkan table yang ada. Tapi tidak harus selalu dari table.
     * Controllers
-        Tempat kita membuat endpointnya dan mendaftarkan ada HTTP method apa saja. Misal ada /users lalu bisa di GET, POST, PUT. 
+    
+    Tempat kita membuat endpointnya dan mendaftarkan ada HTTP method apa saja. Misal ada /users lalu bisa di GET, POST, PUT. 
     * Services
-        Kita bisa menaruh logika di sini misalnya saat hendak menambahkan user baru dengan password, kita bisa melakukan enkripsi password di sini. Di sini kita juga bisa melakukan dekripsi password dan sebagainya.
+    
+    Kita bisa menaruh logika di sini misalnya saat hendak menambahkan user baru dengan password, kita bisa melakukan enkripsi password di sini. Di sini kita juga bisa melakukan dekripsi password dan sebagainya.
     * Repositories
-        Untuk menghubungkan dengan database
+      
+      Untuk menghubungkan dengan database
