@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-    @GetMapping("/greeting")
+    @GetMapping("/greetings")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String custom) {
         Greeting hello = new Greeting(1, "Hello " + custom);
         return hello;
