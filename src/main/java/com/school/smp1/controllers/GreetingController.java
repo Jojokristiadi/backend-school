@@ -10,7 +10,7 @@ public class GreetingController {
 
     @GetMapping("/greeting")
     public Greeting greeting() {
-        Greeting hello = new Greeting(1, "Hello World");
+        Greeting hello = new Greeting(1, "Hello World All");
         return hello;
     }
 }
